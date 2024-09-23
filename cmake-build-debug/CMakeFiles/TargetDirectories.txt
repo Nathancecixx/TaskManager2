@@ -1,0 +1,3 @@
+C:/Users/natha/OneDrive/Documents/Portfolio_Projects/TaskManager2/cmake-build-debug/CMakeFiles/TaskManager2.dir
+C:/Users/natha/OneDrive/Documents/Portfolio_Projects/TaskManager2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/natha/OneDrive/Documents/Portfolio_Projects/TaskManager2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
