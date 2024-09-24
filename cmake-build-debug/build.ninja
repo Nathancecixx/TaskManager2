@@ -71,7 +71,7 @@ build CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj: CXX_COMPILER__TaskMana
 
 build TaskManager2.exe: CXX_EXECUTABLE_LINKER__TaskManager2_Debug CMakeFiles/TaskManager2.dir/main.cpp.obj CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lwbemuuid  -lpdh  -lole32  -loleaut32  -luuid  -lpsapi  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TaskManager2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

@@ -38,24 +38,36 @@ std::string GetProcessName(DWORD processID) {
     return processName;
 }
 
+#include "ProcessManager.h"
+
+
 
 int main() {
 
-    DWORD processes [1024], cbNeeded, processCount;
+    ProcessManager pm = ProcessManager();
 
-    if(!EnumProcesses(processes, sizeof(processes), &cbNeeded))
-        return 1;
-
-
-    processCount = cbNeeded/sizeof(DWORD);
-
-    for(int i = 0; i < processCount; i++){
-        std::cout << processes[i] << "  ====  " << GetProcessName(processes[i]) << "\n";
-    }
-
-
+    pm.PrintProcesses();
     return 0;
 }
+//
+//int main() {
+//
+////    DWORD processes [1024], cbNeeded, processCount;
+////
+////    if(!EnumProcesses(processes, sizeof(processes), &cbNeeded))
+////        return 1;
+////
+//
+//    processCount = cbNeeded/sizeof(DWORD);
+////
+////    for(int i = 0; i < processCount; i++){
+////        std::cout << processes[i] << "  ====  " << GetProcessName(processes[i]) << "\n";
+////    }
+////
+////
+////    return 0;
+//
+//}
 #endif
 
 #ifdef __linux__

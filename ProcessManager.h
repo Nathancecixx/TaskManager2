@@ -7,6 +7,9 @@
 
 #ifdef _WIN32
 #include <windows.h>
+#include <Wbemidl.h>
+#include <comdef.h>
+#include <Pdh.h>
 #include <psapi.h>
 
 #endif

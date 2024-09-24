@@ -1,7 +1,9 @@
 # ninja log v5
-4	2792	7487676814978110	CMakeFiles/TaskManager2.dir/main.cpp.obj	c42359015f66f66b
-2793	2933	7487676816300333	TaskManager2.exe	d2da11f25063c026
-2	832	7486757713025276	CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj	952810e408ee6f1d
-7	891	7488591403393133	CMakeFiles/TaskManager2.dir/main.cpp.obj	c42359015f66f66b
-2	805	7488593581061475	CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj	952810e408ee6f1d
+9	1081	7489039753874054	CMakeFiles/TaskManager2.dir/main.cpp.obj	c42359015f66f66b
+3	1148	7489044693512218	CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj	952810e408ee6f1d
 805	968	7488593582664055	TaskManager2.exe	d2da11f25063c026
+1	138	7489047912785320	build.ninja	8e39554af8d816fd
+2	1054	7489048892384692	CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj	952810e408ee6f1d
+1054	1130	7489048893109879	TaskManager2.exe	9b25b8e4c1404996
+2	1130	7489049410071911	CMakeFiles/TaskManager2.dir/ProcessManager.cpp.obj	952810e408ee6f1d
+1130	1208	7489049410825660	TaskManager2.exe	9b25b8e4c1404996
