@@ -380,19 +380,11 @@ int ProcessManager::ReloadProcInfo() {
     while( (pDirent = readdir(pDir)) != NULL){
         if( isdigit(pDirent->d_name[0]) ){
 
-            std::string fileLocation("/proc//comm");
-            std::string procId(pDirent->d_name);
-
-            fileLocation.insert(6, procId);
-
-            std::string processName;
-
-            std::ifstream processFile(fileLocation);
-            getline(processFile, processName);
-
+            string pid = (pDirent->d_name);
             PROCESS currentProcess;
-            currentProcess.id = pDirent->d_name;
-            currentProcess.name =processName;
+            this->fileParser.populateProcessInfo(pid, currentProcess);
+
+
             processList.push_back(currentProcess);
         }
     }
@@ -409,6 +401,8 @@ int ProcessManager::PrintProcesses(){
     cout << "Memory Available: " << memoryInfo.memAvailable << endl;
     cout << "Swap Memory Total: " << memoryInfo.swapMemUsage << endl;
 
+    cout <<endl << "-------------------------------------------" << endl;
+
 
     cout << "CPU User Time: " << cpuInfo.userTime << endl;
     cout << "CPU System Time: " << cpuInfo.systemTime << endl;
@@ -420,9 +414,14 @@ int ProcessManager::PrintProcesses(){
     cout << "Running Processes: " << cpuInfo.processRunningCount << endl;
     cout << "Blocked Processes: " << cpuInfo.processBlocked << endl;
 
+    cout <<endl << "-------------------------------------------" << endl;
 
     for(int i = 0; i < processList.size(); i++){
-        cout << processList.at(i).id << ": " << processList.at(i).name << endl;
+        cout <<
+        processList.at(i).id <<
+        ": " <<
+        processList.at(i).name <<
+        " Read Bytes: " << processList.at(i).read_bytes << endl;
     }
 
 

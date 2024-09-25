@@ -19,15 +19,14 @@
 #include <fstream>
 #include <sstream>
 
+#include "FileParser.h"
+
 #endif
 
+
+#include "Process.h"
 using namespace std;
 
-typedef struct {
-    string id;
-    string name;
-
-}PROCESS;
 
 typedef struct {
     string cpu;
@@ -63,6 +62,7 @@ private:
     vector<PROCESS> processList;
     PROCESSING_INFO cpuInfo;
     MEMORY_INFO memoryInfo;
+    FileParser fileParser;
 
 
 public:

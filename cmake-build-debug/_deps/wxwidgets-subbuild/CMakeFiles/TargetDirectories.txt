@@ -1,0 +1,3 @@
+/home/bigred/Projects_C/TaskManager2/cmake-build-debug/_deps/wxwidgets-subbuild/CMakeFiles/wxwidgets-populate.dir
+/home/bigred/Projects_C/TaskManager2/cmake-build-debug/_deps/wxwidgets-subbuild/CMakeFiles/edit_cache.dir
+/home/bigred/Projects_C/TaskManager2/cmake-build-debug/_deps/wxwidgets-subbuild/CMakeFiles/rebuild_cache.dir

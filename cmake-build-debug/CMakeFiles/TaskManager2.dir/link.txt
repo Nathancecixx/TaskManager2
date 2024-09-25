@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread -g CMakeFiles/TaskManager2.dir/main.cpp.o CMakeFiles/TaskManager2.dir/ProcessManager.cpp.o CMakeFiles/TaskManager2.dir/FileParser.cpp.o -o TaskManager2  -L/usr/lib/x86_64-linux-gnu -pthread -lwx_gtk3u_core-3.0 -lwx_baseu-3.0
